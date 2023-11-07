@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root{
+    --1: white;
+    --2: black;
+    --3: rgb(51, 170, 255);
+    --4: rgb(86, 185, 255);
+    --5: rgb(220, 247, 255);
+    --6: rgb(9, 186, 9);
+    --7: red;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--3);
+}
+
+.pro{
+    display: flex;
+    flex-direction: row;
+    margin-top: 4rem;
+}
+
+.pro img{
+    width: 4rem;
+    height: 4rem;
+    margin-left: 1rem;
+    position: relative;
+    bottom: 1rem;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form h1{
+    color: var(--1);
+    background-color: var(--3);
+    font-size: 2.5rem;
+}
+
+form{
+    height: 15rem;
+    width: 30rem;
+    margin-top: 3rem;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--5);
+    border-radius: 1.2rem;
+    box-shadow: 0rem 0rem .5rem .4rem var(--4);
+    border: none;
+}
+
+form .in{
+    width: 20rem;
+    height: 2.5rem;
+    border: 0.2rem solid var(--4);
+    border-radius: .7rem;
+    padding-inline-start: 0.5rem;
+}
+
+form .en{
+    width: 20.3rem;
+    height: 2.5rem;
+    border: none;
+    background-color: var(--4);
+    color: var(--1);
+    border-radius: .7rem;
+    cursor: pointer;
+}
+
+input{
+    margin: .3rem;
+}
+
+.listEvents{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    width: auto;
+    background-color: var(--5);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0rem 0rem .5rem .4rem var(--4);
+}
+
+.listEvents .even{
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    border: 0.2rem solid var(--4);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.even .days{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 1rem;
+    padding-inline-start: 4rem;
+}
+
+.days .daysMissing{
+    color: var(--6);
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.days .text{
+    font-weight: 500;
+}
+
+.even .nameEvent{
+    color: var(--2);
+    width: 30rem;
+    font-size: 2rem;
+    padding-inline-start: 2rem;
+    font-weight: 500;
+    overflow-x: scroll;
+    margin-left: 4rem;
+}
+
+.even .dateEvent{
+    color: var(--2);
+    padding-inline-start: 12rem;
+    font-weight: 600;   
+}
+
+.even .delete{
+    color: var(--2);
+    background-color: var(--6);
+    margin-left: 4rem;
+    width: 8rem;
+    height: 4rem;
+    border-radius: .5rem;
+    border: none;
+    cursor: pointer;
+}
+
+.delete:hover{
+    color: var(--1);
+    background-color: var(--7);
+}
+
+footer{
+    margin-top: 4.2rem;
+}
